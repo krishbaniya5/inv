@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="Front.css">
+</head>
+<body>
+    <video autoplay loop muted class="background-v">
+        <source src="videoBcg.mp4"  type="video/mp4">
+    </video>
+    <div class="over-lay"></div>
+    <div class="Car1" id="Honda">
+        <img src="Honda.webp" alt="">
+        <video src="Honda - The Cog.mp4" loop autoplay class="clip"></video><h2>
+            Honda
+            <br>Detals:
+            <br>Price: Rs20,000
+            <br>Year: 2015
+            <br>Color: Black
+            <br>Engine: 1.5L
+            <br><a href="Rent.html"><input type="button" class="register-button" value="Register"></a>
+        </h2><p id="p">
+            </p>
+    </div>
+    <div class="Car2" id="Maruti">
+        <img src="Maruti.jpg" alt="">
+        <video src="Alto 800 TVC (2016) - Toh Chalein Kya (tv ad).mp4" loop class="clip"></video><h2>
+            Maruti
+            <br>Detals:
+            <br>Price: Rs20,000
+            <br>Year: 2015
+            <br>Color: Green
+            <br>Engine: 1.2L
+            <br><a href="Rent.html"><input type="button" class="register-button" value="Register"></a>
+        </h2><p id="p">
+            </p>
+        </h2><p id="p"></p>
+    </div>
+    <div class="Car3" id="Tata">
+        <img src="Tata.jpg" alt="">
+        <video src="The New Tiago _ #SeriouslyFun.mp4" loop class="clip"></video><h2>
+            <div class="Tye">Tata
+            <br>Detals:
+            <br>Price: Rs20,000
+            <br>Year: 2015
+            <br>Color: Yellow         Engine: 1.2L
+            <br><a href="Rent.html"><input type="button" class="register-button" value="Register"></a>
+        </h2><p id="p">
+            </p>
+        </h2><p id="p">
+        </p>
+    </div>
+    <div class="Car4" id="Lambo">
+        <img src="Lambo.avif" alt="">
+        <video src="Lamborghini Revuelto – From Now On.mp4" loop class="clip"></video><h2>
+            Lamborgini
+            <br>Detals:
+            <br>Price: Rs20,000
+            <br>Year: 2015
+            <br>Color: Black    
+            <br>Engine:1.2l    
+            <br><a href="Rent.html"><input type="button" class="register-button" value="Register"></a>
+        </h2><p id="p">
+            </p>Red
+        </h2><p id="p">
+        </p>
+    </div>
+    <script>
+        const cars = document.querySelectorAll('.Car1, .Car2, .Car3, .Car4');
+
+    cars.forEach((car) => {
+  const clip = car.querySelector('.clip');
+  car.addEventListener('mouseenter', () => {
+    clip.play();
+  });
+  car.addEventListener('mouseout', () => {
+    clip.pause();
+  });
+});
+    </script>
+</html>
